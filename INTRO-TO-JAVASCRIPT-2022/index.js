@@ -6,8 +6,8 @@ const DOMSelectors = {
 };
 
 function backgroundAndText(background, text) {
-  background.style.backgroundColor = "red";
-  text.textContent = "This is now a bigger red box ";
+  background.style.backgroundColor = "blue";
+  text.textContent = "This is now a bigger blue box ";
   text.style.fontSize = "40px";
 }
 
