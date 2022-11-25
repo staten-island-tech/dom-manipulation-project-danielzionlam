@@ -4,4 +4,10 @@ const DOMSelectors = {
   input: document.querySelector("#input"),
 };
 const cat = "meow";
-DOMSelectors.box.insertAdjacentHTML("beforebegin", "<h1>We are an </h1>");
+DOMSelectors.box.insertAdjacentHTML("afterend", `<h1>We are ${cat}</h1>`);
+
+DOMSelectors.button.addEventListener("click", function () {
+  let input = DOMSelectors.input.value;
+  DOMSelectors.box.insertAdjacentHTML("beforeend", `<p> ${input}</p>`);
+  DOMSelectors.input.value = "";
+});
