@@ -1,12 +1,12 @@
 // var
 
-const addTask = document.getElementById(`add-task`);
+const DOMSelectors = document.getElementById(`add-task`);
 const taskContainer = document.getElementById(`task-container`);
 const inputTask = document.getElementById(`input-task`);
 
 // event listener
 
-addTask.addEventListener(`click`, function () {
+DOMSelectors.addEventListener(`click`, function () {
   let task = document.createElement(`div`);
   task.classList.add(`task`);
   console.log(task);
