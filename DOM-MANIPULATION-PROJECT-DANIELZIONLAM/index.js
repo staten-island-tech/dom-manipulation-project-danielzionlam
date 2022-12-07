@@ -37,8 +37,8 @@ DOMSelectors.addEventListener(`click`, function () {
     checkButton.parentElement.style.textDecoration = "line-through";
   });
 
-  deleteButton.addEventListener(`click`, function (e) {
-    let target = e.target;
+  deleteButton.addEventListener(`click`, function (penis) {
+    let target = penis.target;
     target.parentElement.parentElement.remove();
   });
 });
